@@ -52,19 +52,27 @@ html,
     top: -30%;
     right: -28%;
   }
-  @media (max-width: 1310px) {
+  @media (max-width: 3000px) {
     .navbar {
-      top: -25% !important;
+      top: -30% !important;
     }
-
   }
-  @media (max-width: 1110px) {
+  @media (max-height: 886px) {
     .navbar {
-      top: -25%;
-      right: -25%;
+      top: -20% !important;
     }
-
   }
+  @media (max-height: 600px) {
+    .navbar {
+      top: -10% !important;
+    }
+  }
+  @media (max-height: 441px) {
+    .navbar {
+      top: 1% !important;
+    }
+  }
+
 .nav-item {
     padding: 3rem;
     height: 1rem;
