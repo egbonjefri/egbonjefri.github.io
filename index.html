@@ -2,7 +2,9 @@
 <html lang="en" dir="ltr">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400&display=swap" rel="stylesheet">
 <link
   rel="stylesheet"
   href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
@@ -15,115 +17,199 @@
   href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap"
   rel="stylesheet"/>
   <link href="./resources/Ephesis-Regular.ttf" href="./resources/css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" 
+  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
   <link rel="stylesheet" href="./resources/css/style.css">
   <title>Jeffery Osagie</title>
 </head>
 
 <body>
-    <div id="navbar" class="navbar">
-        <div class="nav_container" role="navigation">
-            <div class="nav-about">
-              <a href="#projects" class="nav-button">PROJECTS</a>
-            </div>
-            <div class="nav-name">
-              <a href="#" class="nav-button">JEFFERY OSAGIE</a>
-            </div>
-            <div class="nav-projects">
-              <a href="#contact" class="nav-button">CONTACT</a>
-            </div>
-        </div>
-      </div>
-      <!--<section id="welcome-section" class="welcome-section">
-        <h1>Hello I am Jeffery</h1>
-        <p>an aspiring web developer</p>
-      </section>-->
-
-
-        <div class="gif-container">
-        <div class="gif-box">
-          <img src="./images/ezgif.com-gif-maker (1).gif" class="gif" alt="introductory animation">
-        </div>
-      </div>
-      </div>
-      <section id="projects" class="projects-section">
-        <h2 class="projects-section-header">Here are some of my recent projects</h2>
-      
-        <div class="projects-grid">
-          <a
-            href="https://egbonjefri.github.io/colmar_academy/"
-            target="_blank"
-            class="project project-tile"
-          >
-      
-            <p class="project-title">
-              <span class="code">&lt;</span>
-              Colmar Academy
-              <span class="code">&#47;&gt;</span>
-            </p>
-          </a>
-          <a
-            href="https://egbonjefri.github.io/fcc_landing/"
-            target="_blank"
-            class="project project-tile"
-          >
- 
-            <p class="project-title">
-              <span class="code">&lt;</span>
-              TurnTable Landing Page
-              <span class="code">&#47;&gt;</span>
-            </p>
-          </a>
-          <a
-            href="https://codepen.io/egbonjefri/pen/bGRPeoz"
-            target="_blank"
-            class="project project-tile"
-          >
-
-            <p class="project-title">
-              <span class="code">&lt;</span>
-              Bioprinting Page
-              <span class="code">&#47;&gt;</span>
-            </p>
-          </a>
-          <a
-            href="https://egbonjefri.github.io/excursion/"
-            target="_blank"
-            class="project project-tile"
-          >
-
-            <p class="project-title">
-              <span class="code">&lt;</span>
-              Excursion
-              <span class="code">&#47;&gt;</span>
-            </p>
-          </a>
-          <a
-            href="https://egbonjefri.github.io/fcc_survey/"
-            target="_blank"
-            class="project project-tile"
-          >
+<!--Mobile button-->
+  <div id="toggle">
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+  </div>
   
-            <p class="project-title">
-              <span class="code">&lt;</span>
-              Tinder Survey
-              <span class="code">&#47;&gt;</span>
-            </p>
-          </a>
-          <a
-            href="https://egbonjefri.github.io/fcc_tribute/"
-            target="_blank"
-            class="project project-tile"
-          >
+  <div id="menu">
+    <ul>
+      <li><a class="mobile-nav" href="#projects">PROJECTS</a></li>
+      <li><a class="mobile-nav" href="#contact">CONTACT</a></li>
+      </ul>
+  </div>
+      <!--Welcome Section-->
+      <section id="welcome-section" class="welcome-section">
+        <nav class="navbar navbar-expand-lg">
+         
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#projects">PROJECTS</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="#contact">CONTACT</a>
+              </li>
+            </ul>
+      
+        </nav>
+      
+        <h1>Hello! I am Jeffery...</h1>
+        <p class="message animated fadeInDown">front-end web developer</p>
+        <p class="message animated fadeInDown">machine learning enthusiast</p>
+        <p class="message animated fadeInDown">python bender</p>
+        <p class="message animated fadeInDown">javascript aficionado</p>
+        <p class="message animated fadeInDown">technical writer</p>
+        <p class="message animated fadeInDown">data analyst</p>
+        <p class="message animated fadeInDown">physiologist</p>
 
-            <p class="project-title">
-              <span class="code">&lt;</span>
-              Tribute
-              <span class="code">&#47;&gt;</span>
-            </p>
+      </section>
+
+
+
+<!--Projects section-->
+
+
+      <section id="projects" class="projects-section">
+        <h2 class="projects-section-header">Here are some of my recent projects...</h2>
+
+        <div class="projects-grid">
+          
+          <a 
+          href="https://egbonjefri.github.io/colmar_academy/"
+          target="_blank"
+          class="flip3D project project-tile">
+            <div class="back">
+              <img src="./images/colmar.png"/>
+            </div>
+            <div class="front">
+              <p>
+                <span class="code">&lt;</span>
+                Colmar Academy
+                <span class="code">&#47;&gt;</span>
+              </p>
+            </div>
           </a>
+  
+          
+          <a 
+          href="https://egbonjefri.github.io/fcc_landing/"
+          target="_blank"
+          class="flip3D project project-tile">
+            <div class="back">
+              <img src="./images/turntable (2).png"/>
+            </div>
+            <div class="front">
+              <p>
+                <span class="code">&lt;</span>
+                TurnTable Gurus
+                <span class="code">&#47;&gt;</span>
+              </p>
+            </div>
+          </a>
+
+          <a 
+          href="https://alginatecalculator.netlify.app/"
+          target="_blank"
+          class="flip3D project project-tile">
+            <div class="back">
+              <img src="./images/alginate.png"/>
+            </div>
+            <div class="front">
+              <p>
+                <span class="code">&lt;</span>
+                Bio-ink Calculator
+                <span class="code">&#47;&gt;</span>
+              </p>
+            </div>
+          </a>
+
+          <a 
+          href="https://codepen.io/egbonjefri/pen/bGRPeoz"
+          target="_blank"
+          class="flip3D project project-tile">
+            <div class="back">
+              <img src="./images/bioprinting.png"/>
+            </div>
+            <div class="front">
+              <p>
+                <span class="code">&lt;</span>
+                Bioprinting Page
+                <span class="code">&#47;&gt;</span>
+              </p>
+            </div>
+          </a>
+
+          <a 
+          href="https://egbonjefri.github.io/excursion/"
+          target="_blank"
+          class="flip3D project project-tile">
+            <div class="back">
+              <img src="./images/excursion.png"/>
+            </div>
+            <div class="front">
+              <p>
+                <span class="code">&lt;</span>
+                Excursion
+                <span class="code">&#47;&gt;</span>
+              </p>
+            </div>
+          </a>
+   
+       
+          <a 
+          href="https://egbonjefri.github.io/fcc_tribute/"
+          target="_blank"
+          class="flip3D project project-tile">
+            <div class="back">
+              <img src="./images/tribute.png"/>
+            </div>
+            <div class="front">
+              <p>
+                <span class="code">&lt;</span>
+                Tribute Page
+                <span class="code">&#47;&gt;</span>
+              </p>
+            </div>
+          </a>  
+          
         </div>
 
-      
+
+
+        <!--Technologies-->
+      <section id="technologies">
+        <h2 class="w-100 my-5 technology">My favorite technologies include...</h2>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-sm-auto">
+              <i class="tech_list fab fa-react"></i>
+              <p>REACT</p>
+            </div>
+            <div class="col-sm-auto">
+              <i class="tech_list fab fa-js"></i>
+              <p>JAVASCRIPT</p>
+             </div>
+            <div class="col-sm-auto">
+              <i class="tech_list fab fa-html5"></i>
+              <p>HTML 5</p>
+            </div>
+            <div class="col-sm-auto">
+              <i class="tech_list fab fa-css3"></i>
+              <p>CSS 3</p>
+            </div>
+            <div class="col-sm-auto">
+              <i class="tech_list fab fa-git-alt"></i>
+              <p>GIT</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+<!--Contact section-->
+
+
       
       <section id="contact" class="contact-section">
         <div class="contact-section-header">
@@ -158,8 +244,13 @@
         </div>
       </section>
       
-
-      
+      <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      <script src="./resources/script/script.js"></script>
 </body>
 </html>
 
