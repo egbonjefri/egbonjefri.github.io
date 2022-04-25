@@ -52,6 +52,12 @@ html,
     top: -30%;
     right: -28%;
   }
+  @media (max-width: 1310px) {
+    .navbar {
+      top: -25% !important;
+    }
+
+  }
   @media (max-width: 1110px) {
     .navbar {
       top: -25%;
