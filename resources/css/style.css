@@ -52,11 +52,7 @@ html,
     top: -30%;
     right: -28%;
   }
-  @media (max-width: 3000px) {
-    .navbar {
-      top: -30% !important;
-    }
-  }
+
   @media (max-height: 886px) {
     .navbar {
       top: -20% !important;
