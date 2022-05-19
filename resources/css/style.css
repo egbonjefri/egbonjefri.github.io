@@ -46,28 +46,17 @@ html,
 
   /* nav */
   
-  .navbar {
+  .newnav {
     font-size: 2rem;
     font-family: 'Lato', sans-serif;
-    top: -30%;
-    right: -28%;
+  width: 100%;
+  position: absolute;
   }
 
-  @media (max-height: 886px) {
-    .navbar {
-      top: -20% !important;
-    }
-  }
-  @media (max-height: 600px) {
-    .navbar {
-      top: -10% !important;
-    }
-  }
-  @media (max-height: 441px) {
-    .navbar {
-      top: 1% !important;
-    }
-  }
+.navbar {
+  float: right;
+  margin-top: -2%;
+}
 
 .nav-item {
     padding: 3rem;
