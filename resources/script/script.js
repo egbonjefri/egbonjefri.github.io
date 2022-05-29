@@ -40,6 +40,17 @@ $(document).ready(function() {
       });
       $("#toggle").click(function() {
         $(this).toggleClass("on");
-        $("#menu").slideToggle();
+        $('#cover').toggleClass('covering');
+        $("#menu").animate({width: 'toggle'});
       });
+      $('#cover').click(function() {
+        $('#toggle').toggleClass("on");
+        $('#cover').toggleClass('covering');
+        $("#menu").hide(); 
+      })
+      $('.mobile-nav').click(function() {
+        $('#toggle').toggleClass("on");
+        $('#cover').toggleClass('covering');
+        $("#menu").hide(); 
+      })
 });
