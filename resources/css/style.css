@@ -251,7 +251,7 @@ div#cover.covering {
       width: 6.5%;
     }
     #menu ul {
-      margin-left: -1rem;
+      margin-left: -10%;
     }
     .welcome-section > h1 {
       font-size: 4.5rem;
@@ -264,7 +264,14 @@ div#cover.covering {
   
   }
 
+  @media (max-width: 360px) {
 
+    #menu ul {
+      margin-left: -2.2rem;
+    }
+
+  
+  }
 
 
 
@@ -424,9 +431,7 @@ div#cover.covering {
     .contact-section {
       margin-top: 50%;
     }
-    #menu ul {
-      margin-left: -2.3rem;
-    }
+
   }
   .contact-section-header > h2 {
     font-size: 5rem;
