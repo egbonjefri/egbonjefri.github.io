@@ -1,261 +1,98 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400&display=swap" rel="stylesheet">
-<link
-  rel="stylesheet"
-  href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-  integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
-  crossorigin="anonymous"/>
-<link
-  href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap"
-  rel="stylesheet"/>
-<link
-  href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap"
-  rel="stylesheet"/>
-  <link href="./resources/Ephesis-Regular.ttf" href="./resources/css/style.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" 
-  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jeffery Osagie — Physiologist &amp; Software Developer</title>
+  <meta name="description" content="Jeffery Osagie, physiologist and software developer in Winnipeg. Research software, image analysis, and computer architecture.">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#fdfcfa" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#161616" media="(prefers-color-scheme: dark)">
+  <link rel="canonical" href="https://egbonjefri.github.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://egbonjefri.github.io/">
+  <meta property="og:title" content="Jeffery Osagie — Physiologist &amp; Software Developer">
+  <meta property="og:description" content="Research software, image analysis, and computer architecture. Based in Winnipeg.">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Jeffery Osagie — Physiologist &amp; Software Developer">
+  <meta name="twitter:description" content="Research software, image analysis, and computer architecture. Based in Winnipeg.">
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="./resources/css/style.css">
-  <title>Jeffery Osagie</title>
 </head>
 
 <body>
-<!--Mobile button-->
+  <main>
+    <header>
+      <h1>Jeffery Osagie</h1>
 
-  <div id="toggle">
-    <div class="one"></div>
-    <div class="two"></div>
-    <div class="three"></div>
-  </div>
-  
-  <div id="menu">
-    <ul>
-      <li><a class="mobile-nav" href="#projects">PROJECTS</a></li>
-      <li><a class="mobile-nav" href="#contact">CONTACT</a></li>
+      <p>
+        I'm a physiologist and software developer in Winnipeg.
+      </p>
+      <p>
+        My MSc at the University of Manitoba was on
+        <a href="https://mspace.lib.umanitoba.ca/items/f5b6aa9f-d968-4e65-a698-c0abaf1e048b">a 3D-bioprinted airway smooth muscle model for studying asthma</a>.
+        Part of that work meant photographing bioprinted airways before and after
+        adding contractile agents, then manually measuring how much each airway
+        narrowed. I got into programming trying to automate that tedious work.
+        I never went back.
+      </p>
+      <p>
+        These days I write mostly Java, Python, R and JavaScript/TypeScript. I'm
+        currently designing a small processor using only NOR gates, with a
+        longer-term idea in mind: building computers out of proteins.
+      </p>
+      <p>
+        I also like logic and philosophy, chess, and puzzle games like
+        <i>Portal</i> and <i>The Talos Principle</i>.
+      </p>
+    </header>
+
+    <section aria-labelledby="projects-heading">
+      <h2 id="projects-heading">Projects</h2>
+      <ul class="project-list" role="list">
+        <li id="bioring-analyzer">
+          <h3>BioRing Analyzer</h3>
+          <p>
+            Finds bioprinted airway rings in images and measures changes in
+            lumen area, in the browser. TensorFlow.js and OpenCV.js.
+          </p>
+          <p class="project-links">
+            <a href="https://bioringanalyzer.netlify.app/">Open BioRing Analyzer</a>
+            <a href="https://github.com/egbonjefri/bioring_analyzer" aria-label="BioRing Analyzer source code">Source code</a>
+          </p>
+        </li>
+        <li id="nor-processor-study">
+          <h3>NOR-only processor study</h3>
+          <p>
+            My NOR-gate count for the TOY-8 educational processor, with
+            calculations for its registers, memory, ALU, program counter,
+            clock, and control logic.
+          </p>
+          <p class="project-links">
+            <a href="https://github.com/egbonjefri/java_programming_robert_wayne/blob/main/src/chapter_7/section_7.5/SwitchCount.pdf" type="application/pdf">Switch count</a>
+          </p>
+        </li>
+        <li>
+          <h3>Bio-ink calculator</h3>
+          <p>
+            Works out alginate bio-ink formulations.
+          </p>
+          <p class="project-links">
+            <a href="https://alginatecalculator.netlify.app/">Open Bio-ink calculator</a>
+            <a href="https://github.com/egbonjefri/bioink_calculator" aria-label="Bio-ink calculator source code">Source code</a>
+          </p>
+        </li>
       </ul>
-  </div>
-      <!--Welcome Section-->
-      <div class="newnav">
-        <nav class="navbar navbar-expand-lg">
-         
-          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="#projects">PROJECTS</a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="#contact">CONTACT</a>
-            </li>
-          </ul>
-    
-      </nav>
-      </div>
-      <section id="welcome-section" class="welcome-section">
-        <div id="cover"></div>
+    </section>
 
-      
-        <h1>Hello! I am Jeffery...</h1>
-        <p class="message animated fadeInDown">front-end web developer</p>
-        <p class="message animated fadeInDown">machine learning enthusiast</p>
-        <p class="message animated fadeInDown">python bender</p>
-        <p class="message animated fadeInDown">javascript aficionado</p>
-        <p class="message animated fadeInDown">technical writer</p>
-        <p class="message animated fadeInDown">data analyst</p>
-        <p class="message animated fadeInDown">physiologist</p>
-
-      </section>
-
-
-
-<!--Projects section-->
-
-
-      <section id="projects" class="projects-section">
-        <h2 class="projects-section-header">Here are some of my recent projects...</h2>
-
-        <div class="projects-grid">
-          <a 
-          href="https://egbonddit.netlify.app/"
-          target="_blank"
-          class="flip3D project project-tile">
-            <div class="back">
-              <img src="./images/reddit.png"/>
-            </div>
-            <div class="front">
-              <p>
-                <span class="code">&lt;</span>
-               Reddit Client
-                <span class="code">&#47;&gt;</span>
-              </p>
-            </div>
-          </a> 
-          <a 
-          href="https://jsfcccalculator.netlify.app/"
-          target="_blank"
-          class="flip3D project project-tile">
-            <div class="flip3D back">
-              <img src="./images/calculator.png"/>
-            </div>
-            <div class="flip3D front">
-              <p>
-                <span class="code">&lt;</span>
-                JavaScript Calculator
-                <span class="code">&#47;&gt;</span>
-              </p>
-            </div>
-          </a> 
-  
-          
-          <a 
-          href="https://turntablegurus.netlify.app/"
-          target="_blank"
-          class="flip3D project project-tile">
-            <div class="back">
-              <img src="./images/turntable.gif"/>
-            </div>
-            <div class="front">
-              <p>
-                <span class="code">&lt;</span>
-               React Landing Page
-                <span class="code">&#47;&gt;</span>
-              </p>
-            </div>
-          </a>
-
-          <a 
-          href="https://alginatecalculator.netlify.app/"
-          target="_blank"
-          class="flip3D project project-tile">
-            <div class="back">
-              <img src="./images/alginate.png"/>
-            </div>
-            <div class="front">
-              <p>
-                <span class="code">&lt;</span>
-                Bio-ink Calculator
-                <span class="code">&#47;&gt;</span>
-              </p>
-            </div>
-          </a>
-
-          <a 
-          href="https://fccmarkdown-previewer.netlify.app/"
-          target="_blank"
-          class="flip3D project project-tile">
-            <div class="back">
-              <img src="./images/images.gif"/>
-            </div>
-            <div class="front">
-              <p>
-                <span class="code">&lt;</span>
-                Markdown Previewer
-                <span class="code">&#47;&gt;</span>
-              </p>
-            </div>
-          </a>
- 
-          <a 
-          href="https://egbonjefri.github.io/colmar_academy/"
-          target="_blank"
-          class="flip3D project project-tile">
-            <div class="back">
-              <img src="./images/colmar.gif"/>
-            </div>
-            <div class="front">
-              <p>
-                <span class="code">&lt;</span>
-                Colmar Academy
-                <span class="code">&#47;&gt;</span>
-              </p>
-            </div>
-          </a>
-     
-          
-        </div>
-
-
-
-        <!--Technologies-->
-      <section id="technologies">
-        <h2 class="w-100 my-5 technology">My favorite technologies include...</h2>
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-sm-auto">
-              <i class="tech_list fab fa-react"></i>
-              <p>REACT</p>
-            </div>
-            <div class="col-sm-auto">
-              <i class="tech_list fab fa-js"></i>
-              <p>JAVASCRIPT</p>
-             </div>
-            <div class="col-sm-auto">
-              <i class="tech_list fab fa-html5"></i>
-              <p>HTML 5</p>
-            </div>
-            <div class="col-sm-auto">
-              <i class="tech_list fab fa-css3"></i>
-              <p>CSS 3</p>
-            </div>
-            <div class="col-sm-auto">
-              <i class="tech_list fab fa-git-alt"></i>
-              <p>GIT</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-
-
-<!--Contact section-->
-
-
-      
-      <section id="contact" class="contact-section">
-        <div class="contact-section-header">
-          <h2>Let's work together...</h2>
-        </div>
-        <div class="contact-links">
-          <a
-            href="https://facebook.com/egbonjefri"
-            target="_blank"
-            class="btn contact-details"
-            ><i class="fab fa-facebook-square"></i> Facebook</a
-          >
-          <a
-            id="profile-link"
-            href="https://github.com/egbonjefri"
-            target="_blank"
-            class="btn contact-details"
-            ><i class="fab fa-github"></i> GitHub</a
-          >
-          <a
-            href="https://twitter.com/osagiej3e"
-            target="_blank"
-            class="btn contact-details"
-            ><i class="fab fa-twitter"></i> Twitter</a
-          >
-          <a href="mailto:osagiej3@myumanitoba.ca" class="btn contact-details"
-            ><i class="fas fa-at"></i> Email</a
-          >
-          <a href="tel:204-515-8384" class="btn contact-details"
-            ><i class="fas fa-mobile-alt"></i> Call me</a
-          >
-        </div>
-      </section>
-      
-      <script
-      src="https://code.jquery.com/jquery-3.6.0.min.js"
-      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-      crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-      <script src="./resources/script/script.js"></script>
+    <section aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact</h2>
+      <ul class="contact-links" role="list">
+        <li><a href="mailto:egbonjefri@icloud.com">egbonjefri@icloud.com</a></li>
+        <li><a href="https://github.com/egbonjefri">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/jeffery-osagie/">LinkedIn</a></li>
+      </ul>
+    </section>
+  </main>
 </body>
 </html>
-
-
-<!--C:\Users\Jeffery Osagie\Documents\programs\egbonjefri.github.io\egbonjefri.github.io\index.html-->
