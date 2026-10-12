@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Jeffery Osagie — Physiologist &amp; Software Developer</title>
+  <title>Jeffery Osagie</title>
   <meta name="description" content="Jeffery Osagie, physiologist and software developer in Winnipeg. Research software, image analysis, and computer architecture.">
   <meta name="color-scheme" content="light dark">
-  <meta name="theme-color" content="#fdfcfa" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#161616" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#f0eee6" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#1f1e1d" media="(prefers-color-scheme: dark)">
   <link rel="canonical" href="https://egbonjefri.github.io/">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://egbonjefri.github.io/">
@@ -17,82 +17,89 @@
   <meta name="twitter:title" content="Jeffery Osagie — Physiologist &amp; Software Developer">
   <meta name="twitter:description" content="Research software, image analysis, and computer architecture. Based in Winnipeg.">
   <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="./resources/fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <script src="./resources/js/theme.js"></script>
   <link rel="stylesheet" href="./resources/css/style.css">
 </head>
 
 <body>
-  <main>
-    <header>
-      <h1>Jeffery Osagie</h1>
-
-      <p>
-        I'm a physiologist and software developer in Winnipeg.
-      </p>
-      <p>
-        My MSc at the University of Manitoba was on
-        <a href="https://mspace.lib.umanitoba.ca/items/f5b6aa9f-d968-4e65-a698-c0abaf1e048b">a 3D-bioprinted airway smooth muscle model for studying asthma</a>.
-        Part of that work meant photographing bioprinted airways before and after
-        adding contractile agents, then manually measuring how much each airway
-        narrowed. I got into programming trying to automate that tedious work.
-        I never went back.
-      </p>
-      <p>
-        These days I write mostly Java, Python, R and JavaScript/TypeScript. I'm
-        currently designing a small processor using only NOR gates, with a
-        longer-term idea in mind: building computers out of proteins.
-      </p>
-      <p>
-        I also like logic and philosophy, chess, and puzzle games like
-        <i>Portal</i> and <i>The Talos Principle</i>.
-      </p>
+  <div class="page">
+    <header class="site-header">
+      <h1><a href="./">Jeffery Osagie</a></h1>
+      <button class="theme-toggle" type="button" role="switch" aria-checked="false" aria-label="Dark mode" hidden>
+        <span class="theme-toggle-track" aria-hidden="true"></span>
+      </button>
     </header>
 
-    <section aria-labelledby="projects-heading">
-      <h2 id="projects-heading">Projects</h2>
-      <ul class="project-list" role="list">
-        <li id="bioring-analyzer">
-          <h3>BioRing Analyzer</h3>
-          <p>
-            Finds bioprinted airway rings in images and measures changes in
-            lumen area, in the browser. TensorFlow.js and OpenCV.js.
-          </p>
-          <p class="project-links">
-            <a href="https://bioringanalyzer.netlify.app/">Open BioRing Analyzer</a>
-            <a href="https://github.com/egbonjefri/bioring_analyzer" aria-label="BioRing Analyzer source code">Source code</a>
-          </p>
-        </li>
-        <li id="nor-processor-study">
-          <h3>NOR-only processor study</h3>
-          <p>
-            My NOR-gate count for the TOY-8 educational processor, with
-            calculations for its registers, memory, ALU, program counter,
-            clock, and control logic.
-          </p>
-          <p class="project-links">
-            <a href="https://github.com/egbonjefri/java_programming_robert_wayne/blob/main/src/chapter_7/section_7.5/SwitchCount.pdf" type="application/pdf">Switch count</a>
-          </p>
-        </li>
-        <li>
-          <h3>Bio-ink calculator</h3>
-          <p>
-            Works out alginate bio-ink formulations.
-          </p>
-          <p class="project-links">
-            <a href="https://alginatecalculator.netlify.app/">Open Bio-ink calculator</a>
-            <a href="https://github.com/egbonjefri/bioink_calculator" aria-label="Bio-ink calculator source code">Source code</a>
-          </p>
-        </li>
-      </ul>
-    </section>
+    <main>
+      <div class="intro">
+        <p>
+          I'm a physiologist and software developer in Winnipeg.
+        </p>
+        <p>
+          My MSc at the University of Manitoba was on
+          <a href="https://mspace.lib.umanitoba.ca/items/f5b6aa9f-d968-4e65-a698-c0abaf1e048b">a 3D-bioprinted airway smooth muscle model for studying asthma</a>.
+          Part of that work meant photographing bioprinted airways before and after
+          adding contractile agents, then manually measuring how much each airway
+          narrowed. I got into programming trying to automate that tedious work.
+          I never went back.
+        </p>
+        <p>
+          These days I write mostly Java, Python, R and JavaScript/TypeScript. I'm
+          currently designing a small processor using only NOR gates, with a
+          longer-term idea in mind: building computers out of proteins.
+        </p>
+        <p>
+          I also like logic and philosophy, chess, and puzzle games like
+          <i>Portal</i> and <i>The Talos Principle</i>.
+        </p>
+      </div>
 
-    <section aria-labelledby="contact-heading">
-      <h2 id="contact-heading">Contact</h2>
-      <ul class="contact-links" role="list">
-        <li><a href="mailto:egbonjefri@icloud.com">egbonjefri@icloud.com</a></li>
-        <li><a href="https://github.com/egbonjefri">GitHub</a></li>
-        <li><a href="https://www.linkedin.com/in/jeffery-osagie/">LinkedIn</a></li>
-      </ul>
-    </section>
-  </main>
+      <section aria-labelledby="projects-heading">
+        <h2 id="projects-heading">Projects</h2>
+        <ul class="project-list">
+          <li id="bioring-analyzer">
+            <h3>
+              <a href="https://bioringanalyzer.netlify.app/">BioRing Analyzer</a>
+              <span class="project-source">(<a href="https://github.com/egbonjefri/bioring_analyzer" aria-label="BioRing Analyzer source code">Source code</a>)</span>
+            </h3>
+            <p>
+              Finds bioprinted airway rings in images and measures changes in
+              lumen area, in the browser. TensorFlow.js and OpenCV.js.
+            </p>
+          </li>
+          <li id="nor-processor-study">
+            <h3>
+              <a href="https://github.com/egbonjefri/java_programming_robert_wayne/blob/main/src/chapter_7/section_7.5/SwitchCount.pdf" type="application/pdf">NOR-only processor study</a>
+              <span class="project-source">(PDF)</span>
+            </h3>
+            <p>
+              My NOR-gate count for the TOY-8 educational processor, with
+              calculations for its registers, memory, ALU, program counter,
+              clock, and control logic.
+            </p>
+          </li>
+          <li>
+            <h3>
+              <a href="https://alginatecalculator.netlify.app/">Bio-ink calculator</a>
+              <span class="project-source">(<a href="https://github.com/egbonjefri/bioink_calculator" aria-label="Bio-ink calculator source code">Source code</a>)</span>
+            </h3>
+            <p>
+              Works out alginate bio-ink formulations.
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="contact-heading">
+        <h2 id="contact-heading">Contact</h2>
+        <ul class="contact-links">
+          <li><a href="mailto:egbonjefri@icloud.com">egbonjefri@icloud.com</a></li>
+          <li><a href="https://github.com/egbonjefri">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/jeffery-osagie/">LinkedIn</a></li>
+        </ul>
+      </section>
+    </main>
+  </div>
 </body>
 </html>
