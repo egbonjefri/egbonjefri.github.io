@@ -19,7 +19,6 @@
   --bg: #f0eee6;
   --text: #1f1e1d;
   --muted: #5e5d59;
-  --switch-bg: #faf9f5;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -87,19 +86,8 @@ h2 {
   line-height: 1.2;
 }
 
-h3 {
-  margin: 0;
-  font-size: 1em;
-  font-weight: 400;
-  line-height: 1.6;
-}
-
 p {
   margin: 0 0 1em;
-}
-
-.intro p:last-child {
-  margin-bottom: 0;
 }
 
 section {
@@ -133,31 +121,6 @@ a:hover {
   scroll-margin-top: 1.5rem;
 }
 
-.project-list,
-.contact-links {
-  margin: 0;
-  padding-left: 1em;
-  list-style-type: disc;
-}
-
-.project-list > li + li,
-.contact-links > li + li {
-  margin-top: 0.8em;
-}
-
-.project-list p {
-  margin: 0.2rem 0 0;
-  color: var(--muted);
-  font-size: 0.9em;
-  line-height: 1.5;
-}
-
-.project-source {
-  color: var(--muted);
-  font-size: 0.8em;
-  white-space: nowrap;
-}
-
 .theme-toggle {
   flex: 0 0 2.75rem;
   width: 2.75rem;
@@ -181,9 +144,9 @@ a:hover {
   display: block;
   width: 2.5rem;
   height: 1.25rem;
-  border: 1px solid #1f1e1d;
+  border: 1px solid var(--text);
   border-radius: 999px;
-  background: var(--switch-bg);
+  background: var(--bg);
 }
 
 .theme-toggle-track::before {
@@ -194,7 +157,7 @@ a:hover {
   width: 0.875rem;
   height: 0.875rem;
   border-radius: 50%;
-  background: #1f1e1d;
+  background: var(--text);
   transition: transform 160ms ease;
 }
 
