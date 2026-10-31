@@ -83,9 +83,11 @@
         <a href="https://bioringanalyzer.netlify.app/">BioRing Analyzer</a>, which uses TensorFlow.js and OpenCV.js
         to detect bioprinted airway rings and measure changes in lumen area
         in the browser. I've since started modelling airway narrowing with
-        <a href="https://airwaymechanobiolog.netlify.app/">a mass-spring simulation of the airway wall</a>
-        that shows how tissue stiffness limits the narrowing caused by
-        smooth muscle contraction. I've also built
+        <a href="https://airwaymechanobiolog.netlify.app/">a four-layer model of the airway wall</a>.
+        It treats each tissue layer as a continuous elastic material and
+        combines that with smooth muscle contraction to explore how tissue
+        stiffness affects narrowing. The model uses illustrative parameters,
+        not values calibrated to real airways. I've also built
         a <a href="https://alginatecalculator.netlify.app/">bio-ink calculator</a>
         and a
         <a href="https://github.com/egbonjefri/stroke-risk-prediction-app">stroke prediction app</a>.
